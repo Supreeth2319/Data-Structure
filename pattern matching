@@ -39,13 +39,13 @@ void main()
   printf("\nenter the replacement string\n");
   scanf("%s",rep);
   string_match();
-  if(flag==0)
+  if(flag==1)
   {
-    printf("pattern string not found");
+  printf("The resultant string is %s",ans);
   }
   else
   {
-    printf("The resultant string is %s",ans);
+    printf("pattern string not found");
   }
 
 }
