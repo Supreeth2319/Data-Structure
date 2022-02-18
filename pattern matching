@@ -41,14 +41,11 @@ void main()
   string_match();
   if(flag==1)
   {
-  printf("-------------------------------");
   printf("The resultant string is %s",ans);
-  printf("-------------------------------");
   }
   else
-  { printf("---------------------------");
+  { 
     printf("pattern string not found");
-    printf("---------------------------");
   }
 
 }
