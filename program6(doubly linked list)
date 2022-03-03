@@ -52,7 +52,7 @@ void display()
   }
   else{
     temp=head;
-  while(temp->rlink!=NULL)
+  while(temp!=NULL)
     {
       printf("%d",temp->data);
       temp=temp->rlink;
