@@ -23,6 +23,7 @@ int main()
   printf("3.insert_at_specific_point\n");
   printf("4.length_of_link_list\n");
   printf("5.Display the link list");
+  printf("---------------------------");
   printf("enter your choice");
   scanf("%d",&ch);
   switch(ch)
@@ -112,8 +113,4 @@ void insert_at_end()
   }
   
 }
-void insert_at_specific_point()
-{
-  struct node*temp;
-  
-}
+
