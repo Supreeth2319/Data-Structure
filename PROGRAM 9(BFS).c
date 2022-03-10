@@ -1,7 +1,6 @@
 /* Traversal using BFS method*/
 
 #include<stdio.h>
-#include<conio.h>
 
 void bfs(int a[10][10], int n, int u)
 {
@@ -30,12 +29,6 @@ void bfs(int a[10][10], int n, int u)
 	}
 	printf("\n");
 }
-
-
-
-
-
-
 void main()
 {
 	int	n,a[10][10], source, i,j;
@@ -54,5 +47,4 @@ void main()
 	{
 		bfs(a,n,source);
 	}
-	getch();
 }
