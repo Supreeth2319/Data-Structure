@@ -99,23 +99,23 @@ void main()
 	NODE root=NULL;
 	while (1)
 	{
-printf("\nEnter thechoice\n1.Insert\n2.Search\n3.Inorder\n4.Preorder\n5.Postorder \n6:Exit\n");
-		scanf("%d",&ch);
-		switch(ch)
-		{
-			case 1:
+	printf("\nEnter thechoice\n1.Insert\n2.Search\n3.Inorder\n4.Preorder\n5.Postorder \n6:Exit\n");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+    			case 1:
 				printf("Enter the number of items\n");
 				scanf("%d",&n);
 				printf("Enter the item to be inserted\n");
 				root=insert(item,root);
 				break;
-                             case 2 :	
-                                       printf("Enter the item to be searched\n");
-			           scanf("%d",&item);
+                        case 2 :	
+                                printf("Enter the item to be searched\n");
+			        scanf("%d",&item);
 				root=search(item,root);
 				break;
-case 3:
-           if(root==NULL)
+			case 3:
+           			if(root==NULL)
 				{
 					printf("Tree is empty\n");
 					break;
