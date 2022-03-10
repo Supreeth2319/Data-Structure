@@ -27,9 +27,8 @@ do
 {
 printf("\n1)Create:");
 printf("\n2)Insert:");
-printf("\n3)Delete:");
-printf("\n4)Print:");
-printf("\n5)Quit:");
+printf("\n3)Print:");
+printf("\n4)Quit:");
 printf("\n\nEnter Your Choice:");
 scanf("%d",&op);
 switch(op)
@@ -48,11 +47,7 @@ case 2: printf("\nEnter a data:");
 scanf("%d",&x);
 root=insert(root,x);
 break;
-case 3: printf("\nEnter a data:");
-scanf("%d",&x);
-root=Delete(root,x);
-break;
-case 4: printf("\nPreorder sequence:\n");
+case 3: printf("\nPreorder sequence:\n");
 preorder(root);
 printf("\n\nInorder sequence:\n");
 inorder(root);
@@ -95,57 +90,6 @@ T=LR(T);
 T->ht=height(T);
 return(T);
 }
- 
-node * Delete(node *T,int x)
-{
-node *p;
-if(T==NULL)
-{
-return NULL;
-}
-else
-if(x > T->data) // insert in right subtree
-{
-T->right=Delete(T->right,x);
-if(BF(T)==2)
-if(BF(T->left)>=0)
-T=LL(T);
-else
-T=LR(T);
-}
-else
-if(x<T->data)
-{
-T->left=Delete(T->left,x);
-if(BF(T)==-2) //Rebalance during windup
-if(BF(T->right)<=0)
-T=RR(T);
-else
-T=RL(T);
-}
-else
-{
-//data to be deleted is found
-if(T->right!=NULL)
-{ //delete its inorder succesor
-p=T->right;
-while(p->left!= NULL)
-p=p->left;
-T->data=p->data;
-T->right=Delete(T->right,p->data);
-if(BF(T)==2)//Rebalance during windup
-if(BF(T->left)>=0)
-T=LL(T);
-else
-T=LR(T);\
-}
-else
-return(T->left);
-}
-T->ht=height(T);
-return(T);
-}
- 
 int height(node *T)
 {
 int lh,rh;
