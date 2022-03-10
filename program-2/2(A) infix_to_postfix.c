@@ -1,8 +1,7 @@
 /*infix to postfix conversion*/
              
 #include<stdio.h> 
-#include<string.h> 
-#include<conio.h> 
+#include<string.h>
 
 int F(char symbol) 
 { 
@@ -64,16 +63,14 @@ postfix[j++] = s[top--];
 postfix[j] = '\0'; 
 } 
 
-void main() 
+int main() 
 { 
 char infix[20], postfix[20]; 
-printf("\nEnter a valid infix expression\n"); 
-flushall(); 
+printf("\nEnter a valid infix expression\n");
 scanf("%s",infix); 
 infix_postfix(infix,postfix); 
 printf("\nThe infix expression is:\n"); 
 printf ("%s",infix); 
 printf("\nThe postfix expression is:\n"); 
-printf ("%s",postfix); 
-getch(); 
+printf ("%s",postfix);
 }
