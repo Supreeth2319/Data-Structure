@@ -120,7 +120,6 @@ void display()
             break;
         }
     }while(ch!=5);
- //   getch();
 }
 
 
