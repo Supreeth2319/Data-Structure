@@ -54,7 +54,7 @@ void display_Hash_table(EMPLOYEE a[], int n)
 	printf("H_Value\t Emp_id\t Emp_name\n");
 	for(i=0; i<HASH_SIZE; i++)
 	{
-		if(a[i].id!=0);
+		if(a[i].id!=0)
     printf("%d\t %d\t %s\n",i,a[i].id,a[i].name);
 	}
 }
