@@ -76,10 +76,10 @@ void main()
 				scanf("%d",&id);
 				printf("Enter the name:");
 				scanf("%s",name);
-				insert_hash_table(id,name,a);
+				insert_table(id,name,a);
 				break;
 			case 2: printf("Contents of hash table\n");
-				display_hash_table(a,HASH_SIZE);
+				display_Hash_table(a,HASH_SIZE);
 				printf("\n");
 				break;
 			case 3: exit(0);
