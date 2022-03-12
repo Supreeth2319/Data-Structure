@@ -1,2 +1,2 @@
-# Data-Structure-using-C-Projects-
-This repo consists of programs on data structure using c language
+
+<h1>Data Structures Lab<h1>
