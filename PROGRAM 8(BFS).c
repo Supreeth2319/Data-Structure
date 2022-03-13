@@ -32,7 +32,6 @@ void bfs(int a[10][10], int n, int u)
 void main()
 {
 	int	n,a[10][10], source, i,j;
-	clrscr();
 	printf("Enter the number of nodes:");
 	scanf("%d",&n);
 	printf("Enter the adjacency matrix:\n");
