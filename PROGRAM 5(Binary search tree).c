@@ -21,6 +21,12 @@ node insert(int item,node root)
   while(cur!=NULL)
     {
       prev=cur;
+      if(item==cur->info)
+      {
+        printf("duplicate element is not allowed\n");
+        free(temp);
+        return root;
+      }
       if(item<cur->info)
         cur=cur->llink;
       else
@@ -80,7 +86,7 @@ int main()
   node root=NULL;
   while(1)
     {
-      printf("1.insert\t2.search\t3.preorder\t4.postorder\t5.inorder\n");
+      printf("1.insert\n\t2.search\n\t3.preorder\n\t4.postorder\n\t5.inorder\n\n");
 printf("enter your choice\n");
       scanf("%d",&ch);
       switch(ch)
