@@ -55,7 +55,7 @@ NODE search(int item, NODE root)
 	{
 		if(item==cur->info)
                  {
-                     printf(“key found\n”);
+                     printf("key  found");
                       return root;
                   }              
 		if(item<cur->info)
@@ -64,7 +64,7 @@ NODE search(int item, NODE root)
 			cur=cur->rlink;
 	}
       if( cur==NULL)
-      printf(“key not found\n”);
+      printf("key not found");
 	return root;
 }
 
@@ -91,11 +91,12 @@ void postorder(NODE root)
 	if(root==NULL) return;
 	postorder(root->llink);
 	postorder(root->rlink);
-	printf("%d\t",root->info)
+	printf("%d\t",root->info);
+  }
 
 void main()
 {
-	int item,ch;
+	int item,ch,n;
 	NODE root=NULL;
 	while (1)
 	{
