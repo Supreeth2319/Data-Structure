@@ -86,7 +86,7 @@ int main()
   node root=NULL;
   while(1)
     {
-      printf("1.insert\n\t2.search\n\t3.preorder\n\t4.postorder\n\t5.inorder\n\n");
+      printf("\n1.insert\n\t2.search\n\t3.preorder\n\t4.postorder\n\t5.inorder\n\n");
 printf("enter your choice\n");
       scanf("%d",&ch);
       switch(ch)
