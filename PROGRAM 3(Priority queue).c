@@ -102,7 +102,7 @@ void display()
         int ch;
             do{
             printf("\n\n--------Menu-----------\n");
-            printf("1.Create\n 2.Display\n 3.Insert\n 4.Delete\n 5.Exit\n");
+            printf("1.Create\n 2.Display\n  3.Delete\n 4.Exit\n");
             printf("-------------------------------");
             printf("\nEnter your choice: ");
             scanf("%d", &ch);
