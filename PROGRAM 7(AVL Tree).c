@@ -53,7 +53,7 @@ inorder(root);
 printf("\n");
 break;
 }
-}while(op!=5);
+}while(op!=4);
 return 0;
 }
  
